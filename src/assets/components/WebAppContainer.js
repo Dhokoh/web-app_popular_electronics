@@ -8,9 +8,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 function WebAppContainer(){
     return(   
         <div class="d-flex flex-column">
-            <div class="container-fluid">Upper bond</div>
-            <div class="container-fluid"> <Outlet /> </div>
-            <div class="container-fluid fixed-bottom">Lower bond</div>
+            <div class="d-flex justify-content-center fixed-top">Upper bond</div>
+            <div class="d-flex align-items-center"> <Outlet /> </div>
+            <div class="d-flex justify-content-center fixed-bottom">Lower bond</div>
         </div>
     )
 }
