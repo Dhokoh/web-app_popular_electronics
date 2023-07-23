@@ -82,11 +82,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 * React Scripts v5.0.1 
 * Web Vitals v2.1.4 
 
-**Third party**
+## Third Party
 
 * React bootstrap v5.3.0
 * React Router bootstrap v0.26.2  
-* emailJS 
+* emailJS-com v3.2.0 - this is for testing, still not decided which to use. 
+* smtpJS - this is for testing, still not decided which to use.
+* dotenv v16.3.1
+
 
 ## Back End
+
 
