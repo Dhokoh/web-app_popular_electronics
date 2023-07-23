@@ -1,5 +1,24 @@
-/*Header CSS*/
+/*WebAppContainer CSS*/
 .header-link:hover{
   color: #2b2ee2 !important;
+}
+
+/*Contact CSS*/
+.contact_form_container{
+  width: 500px !important;
+  background-color: #6991fe !important;
+  color: #ffffffc3;
+  margin-top: 15px !important;
+  border-radius: 10px !important;
+}
+.input_label{
+  padding: 5px !important;
+}
+.data_clause{
+  color: #ffffffc3 !important;
+}
+.message_field{
+  height: 250px !important;
+  overflow-wrap: break-word !important;
 }
 

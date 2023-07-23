@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started with Create React App (all of this is to be deleted after the project is built and deployed)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +68,25 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# INSTALLED DEPENDENCIES
+
+## Front End
+
+**From react**
+
+* React v18.2.0
+* React DOM v18.2.0 
+* React Router v6.14.1 
+* React Router DOM v6.14.1  
+* React Scripts v5.0.1 
+* Web Vitals v2.1.4 
+
+**Third party**
+
+* React bootstrap v5.3.0
+* React Router bootstrap v0.26.2  
+* emailJS 
+
+## Back End
+

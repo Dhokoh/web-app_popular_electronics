@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function WebAppContainer() {
     return (
         <>
-        <div className='container justify-content-center sticky-top' style={{background:"#B5D9FD", padding:"25px"}}>
+        <div className='container-fluid justify-content-center' style={{background:"#B5D9FD", padding:"25px"}}>
             <nav className='nav'>
                 <strong><a className='nav-link navbar-brand' href="/" style={{marginTop:'7px', }}>Popular Electronics brand</a></strong>
                 <strong><a className='nav-link header-link text-primary-emphasis' aria-current='page' href='/'>Inicio</a></strong>
