@@ -1,13 +1,44 @@
 /*WebAppContainer CSS*/
-.header-link:hover{
-  color: #2b2ee2 !important;
+.header-navbar{
+  background: #090053;
+  padding: 25px;
 }
-
+.header-link{
+  color: white !important;
+}
+.header-link:hover{
+  color: #621bb3 !important;
+}
+.brand{
+  margin-top: 7px !important;
+  color: white !important;
+}
+.searchbar-label{
+  margin-right: 10px !important;
+  margin-top: 5px;
+  color: white;
+}
+.searchbar-field{
+  width: 350px !important;
+  padding-right: 10px;
+  border-radius: 25px !important;
+}
+.search-btn{
+  margin-left: 10px;
+  border-radius: 10px !important;
+  padding: 5px !important;
+}
 /*Contact CSS*/
+.leftmost-container{
+  color: #242424 !important;
+}
+.leftmost-title{
+  
+}
 .contact_form_container{
   width: 500px !important;
-  background-color: #6991fe !important;
-  color: #ffffffc3;
+  background-color: #2da5d4 !important;
+  color: #242424;
   margin-top: 15px !important;
   border-radius: 10px !important;
 }

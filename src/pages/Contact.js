@@ -14,36 +14,53 @@ let SMTP_server = 'smtp.elasticemail.com';
 let SMTP_port = 2525;
 
 // Component constructor
-function Contact(){
+function Contact() {
 
-    return(
-        <> 
-            <div className='contact_form_container container-sm'>
-                <form action='/contact' method='post' autoComplete='off'>
-                    <div className="mb-3">
-                        <label htmlFor="email" className="form-label">Correo electrónico</label>
-                        <input name='email' type="email" class="form-control" aria-describedby="emailHelp"></input>
+    return (
+        <>
+            <div class="container text-center">
+                <div class="row align-items-start">
+                    <div class="col">
+                        <div className='leftmost-container'>
+                            <div class="text-break">
+                                <h4 className='display-6 leftmost-title'>Visitenos</h4>
+                            </div>
+                        </div>
                     </div>
-                    <div className="mb-3">
-                        <label htmlFor="name" className="form-label">Nombre</label>
-                        <input type="text" className="form-control"></input>
+                    <div class="col">
+                        <div className='contact_form_container container-sm'>
+                            <form className="contact_form" action='/contact' method='post' autoComplete='off'>
+                                <div className="mb-3">
+                                    <label htmlFor="email" className="form-label"><strong>Correo electrónico</strong></label>
+                                    <input name='email' type="email" class="form-control" aria-describedby="emailHelp"></input>
+                                </div>
+                                <div className="mb-3">
+                                    <label htmlFor="name" className="form-label"><strong>Nombre</strong></label>
+                                    <input type="text" className="form-control"></input>
+                                </div>
+                                <div className="mb-3">
+                                    <label htmlFor="telephone" className="form-label"><strong>Teléfono</strong></label>
+                                    <input type="text" className="form-control"></input>
+                                </div>
+                                <div className="mb-3">
+                                    <label htmlFor="subject" className="form-label"><strong>Asunto</strong></label>
+                                    <input type="text" className="form-control"></input>
+                                </div>
+                                <div className="mb-3">
+                                    <label htmlFor="message" className="form-label"><strong>Mensaje</strong></label>
+                                    <textarea name='message' className="form-control message_field text-break"></textarea>
+                                </div>
+                                <button type="submit" className="btn btn-primary"><strong>Enviar</strong></button>
+                            </form>
+                            <div className="form-text data_clause"><strong>* Sus datos no serán compartidos.</strong></div>
+                        </div>
                     </div>
-                    <div className="mb-3">
-                        <label htmlFor="telephone" className="form-label">Teléfono</label>
-                        <input type="text" className="form-control"></input>
+                    <div class="col">
+                        One of three columns
                     </div>
-                    <div className="mb-3">
-                        <label htmlFor="subject" className="form-label">Asunto</label>
-                        <input type="text" className="form-control"></input>
-                    </div>
-                    <div className="mb-3">
-                        <label htmlFor="message" className="form-label">Mensaje</label>
-                        <textarea  name='message' className="form-control message_field text-break"></textarea>
-                    </div>
-                    <button type="submit" className="btn btn-primary">Enviar</button>
-                </form>
-                <div className="form-text data_clause">Sus datos no serán compartidos.</div>
-            </div>     
+                </div>
+            </div>
+
         </>
     )
 }
