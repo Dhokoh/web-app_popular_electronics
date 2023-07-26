@@ -25,10 +25,24 @@
 }
 .search-btn{
   margin-left: 10px;
-  border-radius: 10px !important;
-  padding: 5px !important;
+  height: 40px;
+  color: white !important;
 }
 /*Contact CSS*/
+.contact-aboutus-top{
+  background-color: #ffffff;
+  margin-top: 15px !important;
+}
+.aboutus-paragraph{
+   
+}
+.aboutus-title-container{
+  margin: 25px;
+}
+.aboutus-title{
+  color: #1523a0 !important;
+  font-size: 55px !important;
+}
 .leftmost-container{
   color: #242424 !important;
 }
@@ -44,6 +58,7 @@
 }
 .input_label{
   padding: 5px !important;
+  color: #ffffff;
 }
 .data_clause{
   color: #ffffffc3 !important;

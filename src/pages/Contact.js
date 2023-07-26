@@ -20,6 +20,15 @@ function Contact() {
         <>
             <div class="container text-center">
                 <div class="row align-items-start">
+                    <div className='contact-aboutus-top text-break'>
+                        <div className='aboutus-title-container'>
+                            <h6 className='display-1 aboutus-title'>Siempre es un placer atenderlo</h6>
+                            <p className='h6 aboutus-paragraph'>
+                                Con mas de 40 anos de experiencia en el area electronica, nos especializamos en brindar una excelente atencion a nuestros clientes
+                            </p>
+                        </div>
+                        
+                    </div>
                     <div class="col">
                         <div className='leftmost-container'>
                             <div class="text-break">
@@ -31,23 +40,23 @@ function Contact() {
                         <div className='contact_form_container container-sm'>
                             <form className="contact_form" action='/contact' method='post' autoComplete='off'>
                                 <div className="mb-3">
-                                    <label htmlFor="email" className="form-label"><strong>Correo electrónico</strong></label>
-                                    <input name='email' type="email" class="form-control" aria-describedby="emailHelp"></input>
+                                    <label htmlFor="email" className="input_label"><strong>Correo electrónico</strong></label>
+                                    <input name='email' type="email" className="form-control" aria-describedby="emailHelp"></input>
                                 </div>
                                 <div className="mb-3">
-                                    <label htmlFor="name" className="form-label"><strong>Nombre</strong></label>
+                                    <label htmlFor="name" className="input_label"><strong>Nombre</strong></label>
                                     <input type="text" className="form-control"></input>
                                 </div>
                                 <div className="mb-3">
-                                    <label htmlFor="telephone" className="form-label"><strong>Teléfono</strong></label>
+                                    <label htmlFor="telephone" className="input_label"><strong>Teléfono</strong></label>
                                     <input type="text" className="form-control"></input>
                                 </div>
                                 <div className="mb-3">
-                                    <label htmlFor="subject" className="form-label"><strong>Asunto</strong></label>
+                                    <label htmlFor="subject" className="input_label"><strong>Asunto</strong></label>
                                     <input type="text" className="form-control"></input>
                                 </div>
                                 <div className="mb-3">
-                                    <label htmlFor="message" className="form-label"><strong>Mensaje</strong></label>
+                                    <label htmlFor="message" className="input_label"><strong>Mensaje</strong></label>
                                     <textarea name='message' className="form-control message_field text-break"></textarea>
                                 </div>
                                 <button type="submit" className="btn btn-primary"><strong>Enviar</strong></button>
@@ -58,9 +67,11 @@ function Contact() {
                     <div class="col">
                         One of three columns
                     </div>
+                    <div className='contact-aboutus text-break'>
+                        <h6 className=''>Hello</h6>
+                    </div>
                 </div>
             </div>
-
         </>
     )
 }
