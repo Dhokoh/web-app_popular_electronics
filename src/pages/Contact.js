@@ -24,15 +24,15 @@ function Contact() {
                         <div className='aboutus-title-container'>
                             <h6 className='display-1 aboutus-title'>Siempre es un placer atenderlo</h6>
                             <p className='h6 aboutus-paragraph'>
-                                Con mas de 40 anos de experiencia en el area electronica, nos especializamos en brindar una excelente atencion a nuestros clientes
+                                Con mas de 40 anos de experiencia en el mercado, brindamos un excelente servicio, honesto y profesional para todas sus necesidades. Siempre estamos listos para servirle, por eso, este 2023, incursionamos en el mundo digital para facilitar el contacto con nuestros clientes.
                             </p>
-                        </div>
-                        
+                        </div>        
                     </div>
                     <div class="col">
                         <div className='leftmost-container'>
                             <div class="text-break">
                                 <h4 className='display-6 leftmost-title'>Visitenos</h4>
+                                <p className='aboutus-paragraph'>Estamos ubicados en la ciudad de Cali, en el barrio San Nicolas, en la Calle 17 # 5 - 23, frente a la Papeleria Fernandez.</p>
                             </div>
                         </div>
                     </div>
@@ -67,7 +67,7 @@ function Contact() {
                     <div class="col">
                         One of three columns
                     </div>
-                    <div className='contact-aboutus text-break'>
+                    <div className='contact-aboutusfooter text-break'>
                         <h6 className=''>Hello</h6>
                     </div>
                 </div>

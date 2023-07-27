@@ -1,7 +1,7 @@
 /*WebAppContainer CSS*/
 .header-navbar{
   background: #090053;
-  padding: 25px;
+  padding: 2vw;
 }
 .header-link{
   color: white !important;
@@ -10,34 +10,34 @@
   color: #621bb3 !important;
 }
 .brand{
-  margin-top: 7px !important;
+  margin-top: 0.5vw !important;
   color: white !important;
 }
 .searchbar-label{
-  margin-right: 10px !important;
-  margin-top: 5px;
+  margin-right: 1vw !important;
+  margin-top: 0.5vw;
   color: white;
 }
 .searchbar-field{
-  width: 350px !important;
-  padding-right: 10px;
-  border-radius: 25px !important;
+  width: 20vw !important;
+  border-radius: 25vw !important;
+  margin-right: 1vw;
 }
 .search-btn{
-  margin-left: 10px;
-  height: 40px;
+  margin-bottom: 0.5vw;
+  background-color: #2da5d4 !important;
   color: white !important;
 }
 /*Contact CSS*/
 .contact-aboutus-top{
   background-color: #ffffff;
-  margin-top: 15px !important;
+  margin-top: 2.5vw !important;
 }
 .aboutus-paragraph{
-   
+   margin-top: 2.5vw !important;
 }
 .aboutus-title-container{
-  margin: 25px;
+  margin: 2vw;
 }
 .aboutus-title{
   color: #1523a0 !important;
@@ -46,25 +46,26 @@
 .leftmost-container{
   color: #242424 !important;
 }
-.leftmost-title{
-  
-}
 .contact_form_container{
-  width: 500px !important;
+  width: 20vw !important;
   background-color: #2da5d4 !important;
   color: #242424;
-  margin-top: 15px !important;
+  margin-top: 3vw !important;
   border-radius: 10px !important;
 }
 .input_label{
-  padding: 5px !important;
+  padding: 0.5vw !important;
   color: #ffffff;
 }
 .data_clause{
   color: #ffffffc3 !important;
 }
 .message_field{
-  height: 250px !important;
+  height: 10vw !important;
   overflow-wrap: break-word !important;
+}
+.contact-aboutusfooter{
+  margin-top: 2vw !important;
+  width: 100vw !important;
 }
 

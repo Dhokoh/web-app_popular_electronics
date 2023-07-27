@@ -18,9 +18,9 @@ function WebAppContainer() {
             </nav>
             
             <form action={require('../../pages/Home')} className="nav-item d-flex justify-content-end" role="search" style={{marginTop:"-35px"}}>
-                <label for="search_bar" className='searchbar-label'><strong>Busca algo?</strong></label>
-                <input class="form-control mb-2 searchbar-field" name='search_bar' type="text" placeholder="Buscar" aria-label="Search"></input>
-                <button class="btn btn-info search-btn" type="submit"><strong>Ir</strong></button>
+                <label htmlFor="search_bar" className='searchbar-label'><strong>Busca algo?</strong></label>
+                <input className="form-control mb-2 searchbar-field" name='search_bar' type="text" placeholder="Buscar" aria-label="Search"></input>
+                <button className="btn search-btn" type="submit"><strong>Ir</strong></button>
             </form>            
         </div>
         <Outlet />
