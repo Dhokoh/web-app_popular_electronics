@@ -20,6 +20,7 @@ function Contact() {
     //the idea is for it to send a message via whatsapp to the
     //store's whatsapp number.
     const sendInquiry = () => {
+        //TODO
         return (
             ""
         )
@@ -29,7 +30,8 @@ function Contact() {
     //render all the reviews left by clients. 
     //The reviews are to be stored in a DB that will allow CRUD 
     //operations
-    const showReviews = () => {
+    const renderReviews = () => {
+        //TODO
         return (
             ""
         ) 
@@ -110,7 +112,7 @@ function Contact() {
                                     <textarea name='review' className="form-control message_field text-break"></textarea>
                                 </div>
 
-                                <button type="submit" className="btn btn-primary comment-submit-btn" onClick={showReviews}><strong>Enviar</strong></button>
+                                <button type="submit" className="btn btn-primary comment-submit-btn" onClick={renderReviews}><strong>Enviar</strong></button>
                             </form>
                         </div>
                     </div>
