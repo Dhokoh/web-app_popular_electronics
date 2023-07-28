@@ -24,19 +24,15 @@ function Contact() {
                         <div className='aboutus-title-container'>
                             <h6 className='display-1 aboutus-title'>Siempre es un placer atenderlo</h6>
                             <p className='h6 aboutus-paragraph'>
-                                Con mas de 40 anos de experiencia en el mercado, brindamos un excelente servicio, honesto y profesional para todas sus necesidades. Siempre estamos listos para servirle, por eso, este 2023, incursionamos en el mundo digital para facilitar el contacto con nuestros clientes.
+                                Con mas de 40 anos de experiencia en el mercado, brindamos un excelente servicio, honesto y profesional para todas sus necesidades. Siempre estamos listos para servirle y buscamos estar a la vanguardia en tecnologia para brindarle lo mejor en repuestos y componentes, herramientas, modulos y mucho mas. Y ahora, desde este 2023, entramos al mundo del internet para estar mas cerca a usted.
                             </p>
-                        </div>        
+                        </div> 
                     </div>
                     <div class="col">
-                        <div className='leftmost-container'>
-                            <div class="text-break">
-                                <h4 className='display-6 leftmost-title'>Visitenos</h4>
-                                <p className='aboutus-paragraph'>Estamos ubicados en la ciudad de Cali, en el barrio San Nicolas, en la Calle 17 # 5 - 23, frente a la Papeleria Fernandez.</p>
-                            </div>
+                        <div className='contactform-title-container'>
+                        <h4 className='display-6 leftmost-title'>Contactenos</h4>
+                        <p className='aboutus-paragraph'>Puede escribirnos, con gusto atenderemos su solicitud dentro de las proximas 24 horas. </p>
                         </div>
-                    </div>
-                    <div class="col">
                         <div className='contact_form_container container-sm'>
                             <form className="contact_form" action='/contact' method='post' autoComplete='off'>
                                 <div className="mb-3">
@@ -65,7 +61,40 @@ function Contact() {
                         </div>
                     </div>
                     <div class="col">
-                        One of three columns
+                        <div className='leftmost-container'>
+                            <div class="text-break">
+                                <h4 className='display-6 contact-aboutustitle'>Visitenos</h4>
+                                <p className='aboutus-paragraph'>Estamos ubicados en la ciudad de Cali, en el barrio San Nicolas, en la Calle 17 # 5 - 23, frente a la Papeleria Fernandez.</p>
+
+                                <div className='aboutus-location-container'>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!3m2!1ses-419!2sco!4v1690564526013!5m2!1ses-419!2sco!6m8!1m7!1sjgBf5_TjFjxCFqfoGtqPvg!2m2!1d3.453214218420218!2d-76.52762168384007!3f356.4315955042956!4f2.805537180297435!5f0.7820865974627469" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="350vw" height="350vw"></iframe>
+                                </div>
+
+                                <div className='aboutus-map-container'>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.5735135378586!2d-76.53012472582866!3d3.453346951209062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a667d8c8a32f%3A0x8cbc5147fa4b7512!2sCl.%2017%20%235-23%2C%20COMUNA%203%2C%20Cali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses-419!2sco!4v1690561315717!5m2!1ses-419!2sco" allowfullscreen="false" loading="lazy" referrerpolicy="no-referrer-when-downgrade"width="350vw" height="250vw"></iframe>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h4 className='display-6 contact-aboutustitle'>Testimonios</h4>
+                        <p className='aboutus-paragraph'>
+                            Su opinion es muy importante para nosotros, pues su perspectiva nos ayuda a mejorar continuamente.
+                        </p>
+                        <div className='contact_form_container container-sm'>
+                            <form className="contact_form" action='/contact' method='post' autoComplete='off'>
+                                <div className="mb-3">
+                                    <label htmlFor="name" className="input_label"><strong>Nombre</strong></label>
+                                    <input type="text" className="form-control"></input>
+                                </div>
+                                <div className="mb-3">
+                                    <label htmlFor="message" className="input_label"><strong>Su opinion</strong></label>
+                                    <textarea name='message' className="form-control message_field text-break"></textarea>
+                                </div>
+
+                                <button type="submit" className="btn btn-primary comment-submit-btn"><strong>Enviar</strong></button>
+                            </form>
+                        </div>
                     </div>
                     <div className='contact-aboutusfooter text-break'>
                         <h6 className=''>Hello</h6>

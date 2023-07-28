@@ -28,6 +28,8 @@
   background-color: #2da5d4 !important;
   color: white !important;
 }
+
+
 /*Contact CSS*/
 .contact-aboutus-top{
   background-color: #ffffff;
@@ -43,19 +45,31 @@
   color: #1523a0 !important;
   font-size: 55px !important;
 }
+.aboutus-map-container{
+  margin-top: 2vw;
+}
+.aboutus-location-container{
+  margin-top: 2vw;
+}
 .leftmost-container{
   color: #242424 !important;
 }
+.contact-aboutustitle{
+
+}
 .contact_form_container{
   width: 20vw !important;
-  background-color: #2da5d4 !important;
+  background-color: #090053 !important;
   color: #242424;
   margin-top: 3vw !important;
   border-radius: 10px !important;
 }
 .input_label{
   padding: 0.5vw !important;
-  color: #ffffff;
+  color: #ffffff; 
+}
+.radio-label{
+  color: #ffffff  !important;
 }
 .data_clause{
   color: #ffffffc3 !important;
@@ -63,6 +77,9 @@
 .message_field{
   height: 10vw !important;
   overflow-wrap: break-word !important;
+}
+.comment-submit-btn{
+  margin-bottom: 1vw;
 }
 .contact-aboutusfooter{
   margin-top: 2vw !important;
