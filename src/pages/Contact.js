@@ -15,7 +15,25 @@ let SMTP_port = 2525;
 
 // Component constructor
 function Contact() {
+    
+    //Function that handles inquiries by clients, 
+    //the idea is for it to send a message via whatsapp to the
+    //store's whatsapp number.
+    const sendInquiry = () => {
+        return (
+            ""
+        )
+    }
 
+    //This function's behaviour is expected to 
+    //render all the reviews left by clients. 
+    //The reviews are to be stored in a DB that will allow CRUD 
+    //operations
+    const showReviews = () => {
+        return (
+            ""
+        ) 
+    }
     return (
         <>
             <div class="container text-center">
@@ -82,17 +100,17 @@ function Contact() {
                             Su opinion es muy importante para nosotros, pues su perspectiva nos ayuda a mejorar continuamente.
                         </p>
                         <div className='contact_form_container container-sm'>
-                            <form className="contact_form" action='/contact' method='post' autoComplete='off'>
+                            <form className="contact_form" action='/contacto' method='post' autoComplete='off'>
                                 <div className="mb-3">
                                     <label htmlFor="name" className="input_label"><strong>Nombre</strong></label>
                                     <input type="text" className="form-control"></input>
                                 </div>
                                 <div className="mb-3">
-                                    <label htmlFor="message" className="input_label"><strong>Su opinion</strong></label>
-                                    <textarea name='message' className="form-control message_field text-break"></textarea>
+                                    <label htmlFor="review" className="input_label"><strong>Su opinion</strong></label>
+                                    <textarea name='review' className="form-control message_field text-break"></textarea>
                                 </div>
 
-                                <button type="submit" className="btn btn-primary comment-submit-btn"><strong>Enviar</strong></button>
+                                <button type="submit" className="btn btn-primary comment-submit-btn" onClick={showReviews}><strong>Enviar</strong></button>
                             </form>
                         </div>
                     </div>
