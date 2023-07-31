@@ -7,11 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 function Home(){
     return(
         <>
-            <div className='position-relative'>
-                <div className='container-fluid position-absolute top-50 start-0'>
-                    Home page
-                </div>
-            </div>         
+            <div className='container-fluid homepage-separator'></div>
+            
         </>
     )
 }

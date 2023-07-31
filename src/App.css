@@ -1,7 +1,8 @@
 /*WebAppContainer CSS*/
 .header-navbar{
   background: #090053;
-  padding: 2vw;
+  padding: 2vw !important; 
+  align-content: center !important;
 }
 .header-link{
   color: white !important;
@@ -10,7 +11,6 @@
   color: #621bb3 !important;
 }
 .brand{
-  margin-top: 0.5vw !important;
   color: white !important;
 }
 .searchbar-label{
@@ -24,9 +24,19 @@
   margin-right: 1vw;
 }
 .search-btn{
-  margin-bottom: 0.5vw;
   background-color: #2da5d4 !important;
   color: white !important;
+  margin-bottom: 0.5vw;
+}
+.lower-frame{
+  justify-content: center !important;
+  margin-top: 2vw;
+  background-color: #c2c1c1;
+}
+.footer-copyright{
+  color: #ffffff !important;
+  font-size: 80% !important;
+  margin-top: 0.25vw;
 }
 
 
@@ -34,6 +44,9 @@
 .contact-aboutus-top{
   background-color: #ffffff;
   margin-top: 2.5vw !important;
+}
+.column{
+  margin-top: 5% !important;
 }
 .aboutus-paragraph{
    margin-top: 2.5vw !important;
@@ -46,7 +59,19 @@
   font-size: 55px !important;
 }
 .aboutus-map-container{
-  margin-top: 2vw;
+  margin-top: 7%;
+}
+.map-frame{
+  width: 100%;
+  margin-top: 15%;
+}
+.schedule-container{
+  margin-top: 25%;
+  display: flexbox !important;
+  justify-content: space-between !important;
+}
+.schedule-subcontainer{
+  margin-top: 5%;
 }
 .aboutus-location-container{
   margin-top: 2vw;
@@ -54,8 +79,12 @@
 .leftmost-container{
   color: #242424 !important;
 }
-.contact-aboutustitle{
-
+.street-view-container{
+  width: 100%;
+  margin-top: 2vw;
+}
+.street-view-frame{
+  width: 100%;
 }
 .contact_form_container{
   width: 20vw !important;
@@ -68,9 +97,6 @@
   padding: 0.5vw !important;
   color: #ffffff; 
 }
-.radio-label{
-  color: #ffffff  !important;
-}
 .data_clause{
   color: #ffffffc3 !important;
 }
@@ -81,8 +107,29 @@
 .comment-submit-btn{
   margin-bottom: 1vw;
 }
-.contact-aboutusfooter{
-  margin-top: 2vw !important;
-  width: 100vw !important;
+.whatsapp-label{
+  margin-left: 1%;
 }
+.contact-checkbox{
+  margin: 0% 2% 0% 2%;
+}
+.contact-method-preferred{
+  color: #ffffff !important;
+  margin-top: 3% !important;
+  margin-bottom: 5% !important;
+}
+.submit-msg-btn{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/*Home CSS*/
+.homepage-separator{
+  background-color: #c2c1c1;
+  width: 100% !important;
+  height: 15vh !important;
+}
+
+
+
 
