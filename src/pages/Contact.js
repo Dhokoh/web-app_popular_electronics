@@ -117,7 +117,7 @@ function Contact() {
                         </div>
                     </div>
                     <div className='contact-aboutusfooter text-break'>
-                        <h6 className=''>Hello</h6>
+                        <h6 className=''>This lower navbar is TODO</h6>
                     </div>
                 </div>
             </div>
