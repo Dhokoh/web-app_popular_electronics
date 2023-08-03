@@ -8,6 +8,7 @@ function Home(){
     return(
         <>
             <div className='container-fluid homepage-separator'></div>
+            <div className='container-fluid'>Hello World, homepage here</div>
             
         </>
     )

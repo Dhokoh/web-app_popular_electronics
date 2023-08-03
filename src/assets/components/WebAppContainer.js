@@ -9,22 +9,26 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function WebAppContainer() {
     return (
         <>
-        <div className='navbar container-fluid justify-content-between sticky-top header-navbar'>
-            <nav className='nav align-items-start'>
-                <strong><a className='nav-link navbar-brand brand' href="/">Popular Electronics brand</a></strong>
-                <strong><a className='nav-link header-link' aria-current='page' href='/'>Inicio</a></strong>
-                <strong><a className='nav-link header-link' aria-current='page' href='/productos'>Productos</a></strong>
-                <strong><a className='nav-link header-link' aria-current='page' href='/contacto'>Contacto</a></strong>
-            </nav>
-            
-            <form className='nav justify-content-end' action={require('../../pages/Home')} role="search">
-                <label htmlFor="search_bar" className='searchbar-label'><strong>Busca algo?</strong></label>
-                <input className="form-control mb-2 searchbar-field" name='search_bar' type="text" placeholder="Buscar" aria-label="Search"></input>
-                <button className="btn search-btn" type="submit"><strong>Ir</strong></button>
-            </form>            
+        <div className='navbar navbar-expand-lg collapse-sm sticky-top justify-content-between header-navbar' role='navigation'>
+            <div className='container-fluid'>
+                <div className='d-flex mb-1 expand-lg collapse-sm'>
+                    <nav className='nav navbar align-items-start'>
+                        <strong><a className='nav-link navbar-brand brand' href="/">Popular Electronics brand</a></strong>
+                        <strong><a className='nav-link header-link' aria-current='page' href='/'>Inicio</a></strong>
+                        <strong><a className='nav-link header-link' aria-current='page' href='/productos'>Productos</a></strong>
+                        <strong><a className='nav-link header-link' aria-current='page' href='/contacto'>Contacto</a></strong>
+                    </nav>
+                </div>
+                
+                <form className='nav justify-content-end' action={require('../../pages/Home')} role="search">
+                    <label htmlFor="search_bar" className='searchbar-label'><strong>Busca algo?</strong></label>
+                    <input className="form-control mb-2 searchbar-field" name='search_bar' type="text" placeholder="Buscar" aria-label="Search"></input>
+                    <button className="btn search-btn" type="submit"><strong>Ir</strong></button>
+                </form>            
+            </div>
         </div>
         <Outlet />
-        <div className='nav lower-frame sticky-bottom'>
+        <div className='nav lower-frame fixed-bottom'>
             <ul className='nav'>
                 <li className='nav-item'>
                     <a className='nav-link' href='/contacto'>
