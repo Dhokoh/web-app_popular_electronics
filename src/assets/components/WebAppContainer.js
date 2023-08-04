@@ -14,7 +14,7 @@ function WebAppContainer() {
                 <div className='d-flex mb-1 expand-lg collapse-sm'>
                     <nav className='nav navbar align-items-start'>
                         <strong><a className='nav-link navbar-brand brand' href="/">Popular Electronics brand</a></strong>
-                        <strong><a className='nav-link header-link' aria-current='page' href='/'>Inicio</a></strong>
+                        <strong><a className='nav-link header-link collapse' aria-current='page' href='/'>Inicio</a></strong>
                         <strong><a className='nav-link header-link' aria-current='page' href='/productos'>Productos</a></strong>
                         <strong><a className='nav-link header-link' aria-current='page' href='/contacto'>Contacto</a></strong>
                     </nav>
