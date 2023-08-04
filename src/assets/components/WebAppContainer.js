@@ -20,11 +20,13 @@ function WebAppContainer() {
                     </nav>
                 </div>
                 
-                <form className='nav justify-content-end' action={require('../../pages/Home')} role="search">
-                    <label htmlFor="search_bar" className='searchbar-label'><strong>Busca algo?</strong></label>
-                    <input className="form-control mb-2 searchbar-field" name='search_bar' type="text" placeholder="Buscar" aria-label="Search"></input>
-                    <button className="btn search-btn" type="submit"><strong>Ir</strong></button>
-                </form>            
+                <div className='d-flex justify-content-end collapse-sm'>
+                    <form className='nav nav-item justify-content-end' action={require('../../pages/Home')} role="search">
+                        <label htmlFor="search_bar" className='searchbar-label'><strong>Busca algo?</strong></label>
+                        <input className="form-control mb-2 searchbar-field" name='search_bar' type="text" placeholder="Buscar" aria-label="Search"></input>
+                        <button className="btn search-btn" type="submit"><strong>Ir</strong></button>
+                    </form> 
+                </div>       
             </div>
         </div>
         <Outlet />
