@@ -11,13 +11,13 @@ function WebAppContainer() {
         <>
         <nav className='navbar navbar-expand-lg navbar-collapse sticky-top justify-content-between header-navbar' role='navigation'>
             <div className='container-fluid'>
-                <button class="navbar-toggler bg-primary" data-bs-theme="primary" type="button" data-bs-toggle="collapse" data-bs-target="#menu-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button className="btn btn-light navbar-toggler" data-bs-theme="primary" type="button" data-bs-toggle="collapse" data-bs-target="#menu-toggler" aria-controls="menu-toggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className='d-flex mb-1 expand-lg collapse navbar-collapse' id="menu-toggler">
+                <div className='d-flex mb-1 expand-lg navbar-collapse' id="menu-toggler">
                     <div className='collapse nav navbar navbar-collapse align-items-start'>
                         <strong><a className='nav-link navbar-brand brand' href="/">Popular Electronics brand</a></strong>
-                        <strong><a className='nav-link header-link collapse' aria-current='page' href='/'>Inicio</a></strong>
+                        <strong><a className='nav-link header-link collapse' aria-cjurrent='page' href='/'>Inicio</a></strong>
                         <strong><a className='nav-link header-link' aria-current='page' href='/productos'>Productos</a></strong>
                         <strong><a className='nav-link header-link' aria-current='page' href='/contacto'>Contacto</a></strong>
                         <div className='d-flex justify-content-end collapse-sm'>
@@ -32,7 +32,7 @@ function WebAppContainer() {
             </div>
         </nav>
         <Outlet />
-        <div className='d-flex collapse'>
+        <div className='d-flex navbar'>
             <nav className='navbar navbar-expand-lg navbar-collapse lower-frame sticky-bottom navbar-collapse'>
                 <ul className='nav'>
                     <li className='nav-item'>

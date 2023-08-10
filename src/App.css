@@ -38,6 +38,12 @@
   font-size: 80% !important;
   margin-top: 0.25vw;
 }
+.navbar-toggler{
+  background-color: #1b08c9 !important;
+}
+.navbar-toggler-icon{
+  background-color: #1b08c9 !important;
+}
 
 
 /*Contact CSS*/
