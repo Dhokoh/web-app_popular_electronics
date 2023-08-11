@@ -1,51 +1,23 @@
-/*WebAppContainer CSS*/
-.header-navbar{
-  background: #090053;
-  padding: 2vw !important; 
-  align-content: center !important;
+/*Header CSS*/
+.header-g-container{
+  /* display: flex;
+  flex-direction: row;
+  justify-content: flex-end; */
+  background-color: #090053;
+  height: 9vw;
 }
-.header-link{
+.nav-link{
   color: #ffffff !important;
 }
-.header-link:hover{
-  color: #fff01c !important;
+.nav-link:hover{
+  color: #ffff00 !important;
 }
-.brand{
-  color: #ffffff !important;
+.form-container{
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  
 }
-.searchbar-label{
-  margin-right: 1vw !important;
-  margin-top: 0.5vw;
-  color: #ffffff;
-}
-.searchbar-field{
-  width: 20vw !important;
-  border-radius: 25vw !important;
-  margin-right: 1vw;
-}
-.search-btn{
-  background-color: #2da5d4 !important;
-  color: #ffffff !important;
-  margin-bottom: 0.5vw;
-}
-.lower-frame{
-  justify-content: center !important;
-  margin-top: 2vw;
-  background-color: #c2c1c1;
-}
-.footer-copyright{
-  color: #ffffff !important;
-  font-size: 80% !important;
-  margin-top: 0.25vw;
-}
-.navbar-toggler{
-  background-color: #1b08c9 !important;
-}
-.navbar-toggler-icon{
-  background-color: #1b08c9 !important;
-}
-
-
 /*Contact CSS*/
 .contact-aboutus-top{
   background-color: #ffffff;
