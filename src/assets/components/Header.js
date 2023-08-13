@@ -11,7 +11,7 @@ function Header (){
         <div className='header-g-container justify-content-lg-between sticky-top'>
             <nav className='navbar navbar-expand-lg'>
                 <div className="container-fluid">
-                    <button className="navbar-toggler link-emphasis" type="button" data-bs-toggle="collapse" data-bs-target="#header-toggler" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button className="navbar-toggler btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#header-toggler" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="container-fluid navbar-collapse" id="header-toggler"> 
