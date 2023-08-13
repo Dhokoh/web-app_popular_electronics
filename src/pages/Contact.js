@@ -38,6 +38,7 @@ function Contact() {
     }
     return (
         <>
+            <div className='container-fluid page-separator'></div>
             <div class="container text-center">
                 <div class="row align-items-start">
                     <div className='contact-aboutus-top text-break'>

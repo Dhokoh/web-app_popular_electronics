@@ -1,22 +1,17 @@
 /*Header CSS*/
 .header-g-container{
-  /* display: flex;
-  flex-direction: row;
-  justify-content: flex-end; */
   background-color: #090053;
-  height: 9vw;
+  height: 5vw;
 }
 .nav-link{
-  color: #ffffff !important;
+  color: #554cb8 !important;
 }
 .nav-link:hover{
   color: #ffff00 !important;
 }
-.form-container{
-  display: flex;
-  flex-direction: row !important;
+.login-n-cart-holder{
+  display: flex !important;
   justify-content: space-between !important;
-  
 }
 /*Contact CSS*/
 .contact-aboutus-top{
@@ -102,7 +97,10 @@
 }
 
 /*Home CSS*/
-.homepage-separator{
+
+
+/*Other CSS*/
+.page-separator{
   background-color: #c2c1c1;
   width: 100% !important;
   height: 10vh !important;

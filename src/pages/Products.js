@@ -7,11 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 function Products(){
     return(
         <>
-            <div className='position-relative'>
-                <div className='container-fluid position-absolute top-50 start-0'>
-                    Products page
-                </div>
-            </div>         
+            <div className='container-fluid page-separator'></div>
+            <div className='container-fluid'>Hello World, products page here</div>
         </>
     )
 }

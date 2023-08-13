@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 function Home(){
     return(
         <>
-            <div className='container-fluid homepage-separator'></div>
+            <div className='container-fluid page-separator'></div>
             <div className='container-fluid'>Hello World, homepage here</div>
             
         </>

@@ -11,7 +11,7 @@ import Footer from './Footer';
 function WebAppContainer() {
     return (
         <>
-        <Header />
+        <Header/>
         <Outlet />
         <Footer />
         </>
