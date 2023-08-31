@@ -1,29 +1,37 @@
 // Dependencies imports
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState } from 'react';
 
 // Other imports and requirements
 
-
-
-//Needed variables
-
-let SMTP_username = 'webappemailtester@gmail.com';
-let SMTP_password = 'C1DA36F37AB876798CEE59F85516D47DC19C';
-let SMTP_sec_token = '92b8e81c-681b-47da-b537-dd693c54902f';
-let SMTP_server = 'smtp.elasticemail.com';
-let SMTP_port = 2525;
-
 // Component constructor
 function Contact() {
+
+    const backendURL = 'https://web-app-popular-electronics-backend.onrender.com/contacto'    
+    const [formData, setFormData] = useState({
+        email: "",
+        name: "",
+        ph_number: "",
+        subject: "",
+        message: ""
+    });
+
+    const handleChange = (event) => {
+        const {name, value} = event.target;
+        setFormData({
+            ...formData,
+            [name]: value
+        })
+    }
     
     //Function that handles inquiries by clients, 
     //the idea is for it to send a message via whatsapp to the
     //store's whatsapp number.
-    const sendInquiry = () => {
-        //TODO
-        return (
-            ""
-        )
+    const sendInquiry = async (event) => {
+        event.preventDefault(event);
+        try{
+            const backend_res = await fetch()
+        }
     }
 
     //This function's behaviour is expected to 
@@ -58,26 +66,26 @@ function Contact() {
                         <p className='h6 aboutus-paragraph'>Puede escribirnos, con gusto atenderemos su solicitud dentro de las proximas 24 horas. </p>
                         </div>
                         <div className='contact_form_container container-sm'>
-                            <form className="contact_form" action='/contact' method='post' autoComplete='off'>
+                            <form name='contacto' className="contact_form" action='/contact' method='post' autoComplete='off'>
                                 <div className="mb-3">
                                     <label htmlFor="email" className="input_label"><strong>Correo electrónico</strong></label>
-                                    <input name='email' type="email" className="form-control" aria-describedby="emailHelp"></input>
+                                    <input name='email' value={formData.email} onChange={handleChange} type="email" className="form-control" aria-describedby="emailHelp"></input>
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="name" className="input_label"><strong>Nombre</strong></label>
-                                    <input type="text" className="form-control"></input>
+                                    <input name='name' value={formData.name} onChange={handleChange} type="text" className="form-control"></input>
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="telephone" className="input_label"><strong>Teléfono</strong></label>
-                                    <input type="text" className="form-control"></input>
+                                    <input name='telephone' value={formData.ph_number} onChange={handleChange} type="text" className="form-control"></input>
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="subject" className="input_label"><strong>Asunto</strong></label>
-                                    <input type="text" className="form-control"></input>
+                                    <input name='subject' value={formData.subject} onChange={handleChange} type="text" className="form-control"></input>
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="message" className="input_label"><strong>Mensaje</strong></label>
-                                    <textarea name='message' className="form-control message_field text-break"></textarea>
+                                    <textarea name='message' value={formData.message} onChange={handleChange} className="form-control message_field text-break"></textarea>
                                 </div>
                                 <div className="d-flex mb-3 justify-content-center">
                                     
