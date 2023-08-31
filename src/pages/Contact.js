@@ -53,7 +53,7 @@ function Contact() {
                         <div className='aboutus-title-container'>
                             <h6 className='display-1 aboutus-title'><strong>Siempre es un placer atenderlo</strong></h6>
                             <p className='h6 aboutus-paragraph'>
-                                Con mas de 40 anos de experiencia en el mercado, brindamos un excelente servicio, honesto y profesional para todas sus necesidades. Siempre estamos listos para servirle y buscamos estar a la vanguardia en tecnologia para brindarle lo mejor en repuestos y componentes, herramientas, modulos y mucho mas. Y ahora, desde este 2023, entramos al mundo del internet para estar mas cerca a usted.
+                                Con más de 40 años de experiencia en el mercado, brindamos un excelente servicio, honesto y profesional para todas sus necesidades. Siempre estamos listos para servirle y buscamos estar a la vanguardia en tecnología para brindarle lo mejor en repuestos y componentes, herramientas, módulos y mucho más. Y ahora, desde este 2023, entramos al mundo del internet para estar más cerca a usted.
                             </p>
                             <div className='street-view-container'>
                                 <iframe className='street-view-frame' src="https://www.google.com/maps/embed?pb=!3m2!1ses-419!2sco!4v1690564526013!5m2!1ses-419!2sco!6m8!1m7!1sjgBf5_TjFjxCFqfoGtqPvg!2m2!1d3.453214218420218!2d-76.52762168384007!3f356.4315955042956!4f2.805537180297435!5f0.7820865974627469" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="350vw" height="350vw"></iframe>
@@ -63,7 +63,7 @@ function Contact() {
                     <div class="col column">
                         <div className='contactform-title-container'>
                         <h4 className='display-6 leftmost-title'><strong>Contactenos</strong></h4>
-                        <p className='h6 aboutus-paragraph'>Puede escribirnos, con gusto atenderemos su solicitud dentro de las proximas 24 horas. </p>
+                        <p className='h6 aboutus-paragraph'>Puede escribirnos, con gusto atenderemos su solicitud dentro de las próximas 24 horas. </p>
                         </div>
                         <div className='contact_form_container container-sm'>
                             <form name='contacto' className="contact_form" action='/contact' method='post' autoComplete='off'>
@@ -90,7 +90,7 @@ function Contact() {
                                 <div className="d-flex mb-3 justify-content-center">
                                     
                                     <div className='container'>
-                                        <p className='h6 contact-method-preferred'>Cual de los siguientes prefiere para ser contactado?</p>
+                                        <p className='h6 contact-method-preferred'>¿Cuál de los siguientes prefiere para ser contactado?</p>
                                         <label className="form-check-label whatsapp-label" htmlFor='whatsapp'>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffffff" class="bi bi-whatsapp" viewBox="0 0 16 16">
                                                     <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
@@ -118,14 +118,14 @@ function Contact() {
                     <div class="col column">
                         <div className='leftmost-container'>
                             <div class="text-break">
-                                <h4 className='display-6 contact-aboutustitle'><strong>Visitenos</strong></h4>
-                                <p className='h6 aboutus-paragraph'>Estamos ubicados en la ciudad de Cali, en el barrio San Nicolas, en la Calle 17 # 5 - 23, frente a la Papeleria Fernandez.</p>
+                                <h4 className='display-6 contact-aboutustitle'><strong>Visítenos</strong></h4>
+                                <p className='h6 aboutus-paragraph'>Estamos ubicados en la ciudad de Cali, en el barrio San Nicolás, en la Calle 17 # 5 - 23, frente a la Papelería Fernandez.</p>
                                 <div className='aboutus-map-container'>
                                     <iframe className='map-frame' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.5735135378586!2d-76.53012472582866!3d3.453346951209062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a667d8c8a32f%3A0x8cbc5147fa4b7512!2sCl.%2017%20%235-23%2C%20COMUNA%203%2C%20Cali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses-419!2sco!4v1690561315717!5m2!1ses-419!2sco" allowfullscreen="false" loading="lazy" referrerpolicy="no-referrer-when-downgrade"width="350vw" height="250vw"></iframe>
                                 </div>
                                 
                                 <div className='schedule-container'>  
-                                    <h6 className='h6'><strong>Horarios de atencion</strong>
+                                    <h6 className='h6'><strong>Horarios de atención</strong>
                                         <svg className='clock-icon' xmlns="http://www.w3.org/2000/svg" style={{marginLeft:"1vw"}} width="20" height="20" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
                                                 <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
                                                 <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
@@ -138,7 +138,7 @@ function Contact() {
                                                 <p className='h6'>Lunes a Viernes: 8:00 AM - 6:00 PM</p> 
                                             </li>
                                             <li className='list-group-item'>
-                                                <p className='h6'>Sabados: 8:00 AM - 5:00 PM</p>
+                                                <p className='h6'>Sábados: 8:00 AM - 5:00 PM</p>
                                             </li>
                                             <li className='list-group-item'>
                                                 <p className='h6'>Domingos y festivos: 9:00 AM - 1:00 PM</p>
@@ -153,7 +153,7 @@ function Contact() {
                     <div className="col column">
                         <h4 className='display-6 contact-aboutustitle'><strong>Testimonios</strong></h4>
                         <p className='h6 aboutus-paragraph'>
-                            Su opinion es muy importante para nosotros, pues su perspectiva nos ayuda a mejorar continuamente.
+                            Su opinión es muy importante para nosotros, pues su perspectiva nos ayuda a mejorar continuamente.
                         </p>
                         <div className='contact_form_container container-sm'>
                             <form className="contact_form" action='/contacto' method='post' autoComplete='off'>
@@ -162,7 +162,7 @@ function Contact() {
                                     <input type="text" className="form-control"></input>
                                 </div>
                                 <div className="mb-3">
-                                    <label htmlFor="review" className="input_label"><strong>Su opinion</strong></label>
+                                    <label htmlFor="review" className="input_label"><strong>Su opinión</strong></label>
                                     <textarea name='review' className="form-control message_field text-break"></textarea>
                                 </div>
 
