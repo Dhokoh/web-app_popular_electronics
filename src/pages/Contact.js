@@ -91,7 +91,7 @@ function Contact() {
                     <div className="col column">
                         <div className='contactform-title-container'>
                         <h4 className='display-6 leftmost-title'><strong>Contactenos</strong></h4>
-                        <p className='h6 aboutus-paragraph'>Puede escribirnos, con gusto atenderemos su solicitud dentro de las próximas 24 horas. </p>
+                        <p className='h6 aboutus-paragraph'>Escribanos, con gusto atenderemos su solicitud dentro de las próximas 24 horas. </p>
                         </div>
                         <div className='contact_form_container container-sm'>
                             <form name='contacto' className="contact_form" action={backendURL} onSubmit={sendInquiry} method='post' autoComplete='off'>
