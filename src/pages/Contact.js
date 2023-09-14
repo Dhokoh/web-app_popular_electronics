@@ -30,36 +30,37 @@ function Contact() {
     //store's whatsapp number.
     const sendInquiry = async (event) => {
         event.preventDefault(event);
-        try{
-            const backend_res = await fetch(testurl, {
-                method: 'POST',
-                headers: {
-                    'Content-type': 'application/json',
-                },
-                body: JSON.stringify(contactFormData)
-            });
+        
+    //     try{
+    //         const backend_res = await fetch(testurl, {
+    //             method: 'POST',
+    //             headers: {
+    //                 'Content-type': 'application/json',
+    //             },
+    //             body: JSON.stringify(contactFormData)
+    //         });
 
-            if (backend_res.ok){
-                //Successful, server code 200
-                console.log("email sent successfully")
-                return (
-                    <>
-                        <h1>EMAIL SENT!</h1>
-                    </>
-                );
-            }else{
-                //Unsuccessful, server code 500 or similar
-                console.error('Sending email failure');
-                return (
-                    <>
-                        <h1>Something went wrong</h1>
-                    </>
-                );
-            }
+    //         if (backend_res.ok){
+    //             //Successful, server code 200
+    //             console.log("email sent successfully")
+    //             return (
+    //                 <>
+    //                     <h1>EMAIL SENT!</h1>
+    //                 </>
+    //             );
+    //         }else{
+    //             //Unsuccessful, server code 500 or similar
+    //             console.error('Sending email failure');
+    //             return (
+    //                 <>
+    //                     <h1>Something went wrong</h1>
+    //                 </>
+    //             );
+    //         }
 
-        }catch(e){
-            console.error('Error sending email: ' + e)
-        }
+    //     }catch(e){
+    //         console.error('Error sending email: ' + e)
+    //     }
     }
 
     //This function's behaviour is expected to 
