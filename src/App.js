@@ -10,6 +10,7 @@ import WebAppContainer from './assets/components/WebAppContainer';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import Contact from './pages/Contact';
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route index element={<Home />}></Route>
           <Route path='/productos' element={<Products/>}></Route>
           <Route path='/contacto' element={<Contact/>}></Route>
+          <Route path='/login' element={<Login/>}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
