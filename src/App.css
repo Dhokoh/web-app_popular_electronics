@@ -98,7 +98,52 @@
 }
 
 /*Home CSS*/
+.purchase-options-area{
+  background-color: #21c400;
+  color: #000000;
+}
+.tools-components-other{
+  background-color: #ffff00;
+  color: #000000;
+}
+.product-of-the-day{
+  background-color: #ce0808;
+  color: #000000;
+}
+.brands-sold{
+  background-color: #800080;
+  color: #000000;
+}
+.payment-methods{
+  background-color: aquamarine;
+  color:#000000;
+}
 
+/*Login CSS*/
+
+/* .login-page-general-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.login-page-title{
+  margin: 5vw !important;
+  font-weight: 600;
+  color: #000000;
+}
+.login-form-label{
+  font-weight: bold;
+}
+
+.login-form-input{
+  width: 30vw !important;
+}
+
+.login-btn{
+  color: #ffffff !important;
+  font-weight: bold !important;
+}
 
 /*Other CSS*/
 .page-separator{

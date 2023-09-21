@@ -9,7 +9,7 @@ function Home(){
         <>
             <div className='container-fluid page-separator'></div>
             <div className='container-fluid'>
-                <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
+                <div id="carouselExampleAutoplaying" className="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src={require('../assets/images/carousel_dev_0.png')} className="d-block w-100" alt="..."></img>
@@ -31,11 +31,11 @@ function Home(){
                     </button>
                 </div>
             </div>
-            <div>Purchase options and specs</div>
-            <div>Herramientas Componentes Producto terminado</div>
-            <div>Product of the day/week</div>
-            <div>Brands sold</div>
-            <div>Payment methods</div>
+            <div className='purchase-options-area'>Purchase options and specs</div>
+            <div className='tools-components-other'>Herramientas Componentes y otros productos</div>
+            <div className='product-of-the-day'>Product of the day/week</div>
+            <div className='brands-sold'>Brands sold</div>
+            <div className='payment-methods'>Payment methods</div>
         </>
     )
 }
