@@ -23,7 +23,7 @@ function Login(){
                     como precios especiales, noticias sobre nuevos productos y muchas cosas mas. Empiece por crear su cuenta con nosotros!</p>
                 
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#create-account-client">
-                        Crear cuenta
+                        Registrarme
                     </button>
 
 
@@ -40,8 +40,8 @@ function Login(){
                                     A form will go here!
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                    <button type="submit" class="btn btn-primary">Crear cuenta</button>
                                 </div>
                             </div>
                         </div>
