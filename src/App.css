@@ -150,6 +150,14 @@
   font-weight: bold !important;
 }
 
+.loginpage-p{
+  margin-bottom: 2vw;
+}
+
+.modal-text{
+  color: #242424
+}
+
 /*Other CSS*/
 .page-separator{
   background-color: #c2c1c1;
