@@ -132,6 +132,11 @@
   font-weight: 600;
   color: #000000;
 }
+
+.login-left-panel{
+  margin-left: 2vw;
+}
+
 .login-form-label{
   font-weight: bold;
 }
