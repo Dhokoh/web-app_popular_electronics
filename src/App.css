@@ -158,6 +158,18 @@
   color: #242424
 }
 
+.registration-link:link{
+  font-weight: bold;
+}
+
+.reg-innerspan{
+  text-decoration: dashed;
+}
+
+.data-wont-share{
+  font-size: small;
+}
+
 /*Other CSS*/
 .page-separator{
   background-color: #c2c1c1;

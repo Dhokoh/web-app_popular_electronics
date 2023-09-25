@@ -18,26 +18,44 @@ function Login(){
                     </form>
                 </div>
                 <div className='col login-left-panel'>
-                    <h6 className='font-weight-bold loginpage-p'>No tiene una cuenta?</h6>
-                    <p className='font-weight-normal loginpage-p'>Ser nuestro cliente premium trae muchos beneficios, 
-                    como precios especiales, noticias sobre nuevos productos y muchas cosas mas. Empiece por crear su cuenta con nosotros!</p>
+                    <h5 className='font-weight-bold loginpage-p'>No tiene una cuenta?</h5>
+                    <ul className='list-group list-group-flush'>
+                    <p className='font-weight-normal loginpage-p'><a  className="registration-link link-body-emphasis link-underline-warning" href="/login" data-toggle="modal" data-target="#create-account-client">
+                    Registrarse</a> tiene sus ventajas, puede:</p>
+                        <li className='list-group-item'>
+                            <p className=''>Mantenerse actualizado con los productos de nuestra tienda.</p> 
+                        </li>
+                        <li className='list-group-item'>
+                            <p>Promociones</p>
+                        </li>
+                        <li className='list-group-item'>
+                            <p>something</p>
+                        </li>
+                        <li className='list-group-item'>
+                            <p>Y mas...</p>
+                            <img src='/..' alt='some picture of semiconductors'></img>
+                        </li>
+                    </ul>
                 
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#create-account-client">
-                        Registrarme
-                    </button>
 
 
                     <div class="modal fade" id="create-account-client" tabindex="-1" role="dialog" aria-labelledby="create-account-modal" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title modal-text" id="exampleModalLabel">Bienvenido a la familia Popular Electronics</h5>
+                                    <h5 class="modal-title modal-text" id="exampleModalLabel">Popular Electronics</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    A form will go here!
+                                    <h5>Bienvenido!</h5>
+                                    <p>Por favor diligencie el formato y presione en el boton <span className='fst-italic'>Crear cuenta</span> una vez este completo.</p>
+                                    <p className='data-wont-share'>* Sus datos no seran compartidos.</p>
+                                    <form className='form-control' action='/login' method='post'>
+                                        <label htmlFor='name' className='reg-form-label fs-6'>Nombre</label>
+                                        <input name='name form-control'></input>
+                                    </form>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
