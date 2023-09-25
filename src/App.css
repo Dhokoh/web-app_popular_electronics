@@ -170,6 +170,14 @@
   font-size: small;
 }
 
+.reg-form-label{
+  margin-right: 1vw;
+}
+
+.reg-form-input{
+  
+}
+
 /*Other CSS*/
 .page-separator{
   background-color: #c2c1c1;

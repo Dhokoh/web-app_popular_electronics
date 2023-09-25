@@ -52,8 +52,8 @@ function Login(){
                                     <h5>Bienvenido!</h5>
                                     <p>Por favor diligencie el formato y presione en el boton <span className='fst-italic'>Crear cuenta</span> una vez este completo.</p>
                                     <p className='data-wont-share'>* Sus datos no seran compartidos.</p>
-                                    <form className='form-control' action='/login' method='post'>
-                                        <label htmlFor='name' className='reg-form-label fs-6'>Nombre</label>
+                                    <form className='form mb-3' action='/login' method='post'>
+                                        <label htmlFor='name' className='reg-form-label fs-6 reg-form-input'>Nombre</label>
                                         <input name='name form-control'></input>
                                     </form>
                                 </div>
