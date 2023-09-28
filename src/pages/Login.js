@@ -6,8 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Login(){
     return <>
         <div className='container-fluid login-page-general-container'>
+        <h4 className='text-start login-page-title'>Bienvenido</h4>
             <div className='row justify-content-center mb-3'>
-                <h4 className='text-center login-page-title'>Bienvenido</h4>
                 <div className='col login-left-panel'>
                     <form action='/login' method='post'>
                         <label className='form-label mb-3 login-form-label' htmlFor='email'>Correo electronico: </label>
@@ -18,7 +18,7 @@ function Login(){
                     </form>
                 </div>
                 <div className='col login-left-panel'>
-                    <h5 className='font-weight-bold loginpage-p'>No tiene una cuenta?</h5>
+                    <h6 className='login-left-panel-title'>No tiene cuenta?</h6>
                     <ul className='list-group list-group-flush'>
                     <p className='font-weight-normal loginpage-p'><a  className="registration-link link-body-emphasis link-underline-warning" href="/login" data-toggle="modal" data-target="#create-account-client">
                     Registrarse</a> tiene sus ventajas, puede:</p>
@@ -29,7 +29,7 @@ function Login(){
                             <p>Promociones</p>
                         </li>
                         <li className='list-group-item'>
-                            <p>something</p>
+                            <p>Servicio personalizado</p>
                         </li>
                         <li className='list-group-item'>
                             <p>Y mas...</p>
@@ -54,12 +54,18 @@ function Login(){
                                     <p className='data-wont-share'>* Sus datos no seran compartidos.</p>
                                     <form className='form mb-3' action='/login' method='post'>
                                         <label htmlFor='name' className='reg-form-label fs-6 reg-form-input'>Nombre</label>
-                                        <input name='name form-control'></input>
+                                        <input name='name' className='form-control mb-3' type='text'></input>
+                                        <label htmlFor='ph-number' className='reg-form-label fs-6 reg-form-input'>Telefono</label>
+                                        <input name='ph-number' className='form-control mb-3'></input>
+                                        <label htmlFor='email' className='reg-form-label fs-6 reg-form-input'>Correo electronico</label>
+                                        <input name='email' className='form-control mb-3' required='true'></input>
+                                        <label htmlFor='password' className='reg-form-label fs-6 reg-form-input'>Contrasena</label>
+                                        <input name='password' className='form-control mb-3' type='password'></input>
+                                        <button type="submit" class="btn btn-primary">Crear cuenta</button>
                                     </form>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                                    <button type="submit" class="btn btn-primary">Crear cuenta</button>
                                 </div>
                             </div>
                         </div>
