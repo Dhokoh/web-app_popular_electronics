@@ -36,6 +36,9 @@ function Login(){
                             <img src='/..' alt='some picture of semiconductors'></img>
                         </li>
                     </ul>
+                    <div>
+                        <a >No soy cliente</a>
+                    </div>
                 
 
 
