@@ -11,6 +11,7 @@ import Home from './pages/Home';
 import Products from './pages/Products';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
+import AdminLogin from './pages/AdminLogin'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/productos' element={<Products/>}></Route>
           <Route path='/contacto' element={<Contact/>}></Route>
           <Route path='/login' element={<Login/>}></Route>
+          <Route path='/admin' element={<AdminLogin/>}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

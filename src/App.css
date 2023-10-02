@@ -179,6 +179,22 @@
   margin-bottom: 2vw;
 }
 
+.not-a-client-link{
+  font-size: small;
+  margin-top: 2vw !important;
+}
+
+/*Admin portal CSS*/
+
+.admin-title{
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+.admin-login-input{
+  width: 20vw !important;
+}
+
 /*Other CSS*/
 .page-separator{
   background-color: #c2c1c1;

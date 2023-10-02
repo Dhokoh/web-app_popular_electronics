@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Login(){
     return <>
         <div className='container-fluid login-page-general-container'>
-        <h4 className='text-start login-page-title'>Bienvenido</h4>
+        <h3 className='fs-2 text-start login-page-title'>Bienvenido</h3>
             <div className='row justify-content-center mb-3'>
                 <div className='col login-left-panel'>
                     <form action='/login' method='post'>
@@ -33,14 +33,9 @@ function Login(){
                         </li>
                         <li className='list-group-item'>
                             <p>Y mas...</p>
-                            <img src='/..' alt='some picture of semiconductors'></img>
+                            <img src='/..' alt='some semiconductors'></img>
                         </li>
                     </ul>
-                    <div>
-                        <a >No soy cliente</a>
-                    </div>
-                
-
 
                     <div class="modal fade" id="create-account-client" tabindex="-1" role="dialog" aria-labelledby="create-account-modal" aria-hidden="true">
                         <div class="modal-dialog" role="document">
