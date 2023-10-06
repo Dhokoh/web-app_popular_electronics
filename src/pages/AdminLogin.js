@@ -11,12 +11,12 @@ function AdminLogin(){
             </div>
             <div className='container-fluid justify-content-center'>
                 <div className='mb-3'>
-                    <form action='/login' method='post'>
+                    <form action='/admin' method='post'>
                         <label className='form-label mb-3 login-form-label' htmlFor='email'>Correo electronico: </label>
                         <input className='form-control mb-3 login-form-input' name='email' type='text' required='true' />
                         <label className='form-label mb-3 login-form-label' htmlFor='password'>Contrasena: </label>
                         <input className='form-control mb-3 login-form-input' name='password' type='password' required='true' />
-                        <button className='btn btn-info mb-3 login-btn'>Iniciar Sesion</button>
+                        <button className='btn btn-info mb-3 admin-login-btn'>Iniciar Sesion</button>
                     </form>
                 </div>
             </div>

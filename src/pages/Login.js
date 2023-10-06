@@ -14,7 +14,7 @@ function Login(){
                         <input className='form-control mb-3 login-form-input' name='email' type='text' required='true'/>
                         <label className='form-label mb-3 login-form-label' htmlFor='password'>Contrasena: </label>
                         <input className='form-control mb-3 login-form-input' name='password' type='password' required='true'/>
-                        <button className='btn btn-info mb-3 login-btn'>Iniciar Sesion</button>
+                        <button type='submit' className='btn btn-info mb-3 login-btn'>Iniciar Sesion</button>
                     </form>
                 </div>
                 <div className='col login-left-panel'>

@@ -121,16 +121,10 @@
 
 /*Login CSS*/
 
-/* .login-page-general-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
-
 .login-page-title{
   margin: 5vw !important;
   font-weight: 600;
-  color: #000000;
+  color: #090053;
 }
 
 .login-left-panel{
@@ -179,9 +173,8 @@
   margin-bottom: 2vw;
 }
 
-.not-a-client-link{
-  font-size: small;
-  margin-top: 2vw !important;
+.login-btn{
+  background-color: #090053 !important;
 }
 
 /*Admin portal CSS*/
@@ -189,10 +182,21 @@
 .admin-title{
   margin-top: 5vw;
   margin-bottom: 5vw;
+  color: #090053;
+}
+
+.login-form-label{
+  color: #090053;
 }
 
 .admin-login-input{
   width: 20vw !important;
+}
+
+.admin-login-btn{
+  color: #ffffff !important;
+  font-weight: bold !important;
+  background-color: #020085 !important;
 }
 
 /*Other CSS*/
