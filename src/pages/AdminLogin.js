@@ -3,6 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Other imports
 
+
+const backendURL = 'https://web-app-popular-electronics-backend.onrender.com/admin'    //Deployment
+const testurl = 'http://localhost:3000/admin' //testing
 function AdminLogin(){
     return <>
         <div className='d-block'>

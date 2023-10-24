@@ -1,19 +1,52 @@
 //Dependencies imports
 import 'bootstrap/dist/css/bootstrap.min.css';
+import React, {useState} from 'react';
 
 //Other imports
+import Profile from '../pages/subpages/Profile'
 
+const backendURL = 'https://web-app-popular-electronics-backend.onrender.com/profile'    //Deployment
+const testurl = 'http://localhost:3000/login' //testing
 function Login(){
+
+    const [loginData, setLoginData] = useState({
+        email: "",
+        password: "",
+    });
+
+    const handleChange = (event) => {
+        const {name, value} = event.target;
+        setLoginData({
+            ...loginData,
+            [name]: value,
+        })
+    };
+
+    const loginUser = () => {
+        const all_users = fetch(testurl, {
+            method:"POST",
+            headers:{
+                'Content-type': 'application/json',
+            },
+            body: JSON.stringify()
+        })
+        if (all_users.body.email == loginData.email){
+            return <>
+                <Profile/>
+            </>
+        }
+    }
+
     return <>
         <div className='container-fluid login-page-general-container'>
         <h3 className='fs-2 text-start login-page-title'>Bienvenido</h3>
             <div className='row justify-content-center mb-3'>
                 <div className='col login-left-panel'>
-                    <form action='/login' method='post'>
+                    <form action={testurl} method='post' onSubmit={loginUser}>
                         <label className='form-label mb-3 login-form-label' htmlFor='email'>Correo electronico: </label>
-                        <input className='form-control mb-3 login-form-input' name='email' type='text' required='true'/>
+                        <input className='form-control mb-3 login-form-input' name='email' value={loginData.email} onChange={handleChange} type='text' required='true'/>
                         <label className='form-label mb-3 login-form-label' htmlFor='password'>Contrasena: </label>
-                        <input className='form-control mb-3 login-form-input' name='password' type='password' required='true'/>
+                        <input className='form-control mb-3 login-form-input' name='password' value={loginData.password} onChange={handleChange} type='password' required='true'/>
                         <button type='submit' className='btn btn-info mb-3 login-btn'>Iniciar Sesion</button>
                     </form>
                 </div>
