@@ -14,13 +14,48 @@ function Login(){
         password: "",
     });
 
-    const handleChange = (event) => {
+    const [newUserData, setnewUserData] = useState({
+        name: "",
+        email: "",
+        password: "",
+    });
+
+    const handleChangeLogin = (event) => {
         const {name, value} = event.target;
         setLoginData({
             ...loginData,
             [name]: value,
-        })
+        });
     };
+
+    const handleChangeNewUser = (event) => {
+        const {name, value} = event.target;
+        setnewUserData({
+            ...newUserData,
+            [name] : value,
+        });
+    };
+
+    const addUser = async () => {
+        try{
+            const response = await fetch (testurl, {
+                method: 'POST',
+                headers: {
+                    'Content-type': 'application/json'
+                },
+                body: JSON.stringify(newUserData)
+            });
+
+            if (response.ok){
+                //User created successfully.
+                console.warn('usuario creado');
+            }else{
+                console.error('Hubo un problema');
+            }
+        }catch(e){
+            
+        }
+    }
 
     const loginUser = () => {
         const all_users = fetch(testurl, {
@@ -44,9 +79,9 @@ function Login(){
                 <div className='col login-left-panel'>
                     <form action={testurl} method='post' onSubmit={loginUser}>
                         <label className='form-label mb-3 login-form-label' htmlFor='email'>Correo electronico: </label>
-                        <input className='form-control mb-3 login-form-input' name='email' value={loginData.email} onChange={handleChange} type='text' required='true'/>
+                        <input className='form-control mb-3 login-form-input' name='email' value={loginData.email} onChange={handleChangeLogin} type='text' required='true'/>
                         <label className='form-label mb-3 login-form-label' htmlFor='password'>Contrasena: </label>
-                        <input className='form-control mb-3 login-form-input' name='password' value={loginData.password} onChange={handleChange} type='password' required='true'/>
+                        <input className='form-control mb-3 login-form-input' name='password' value={loginData.password} onChange={handleChangeLogin} type='password' required='true'/>
                         <button type='submit' className='btn btn-info mb-3 login-btn'>Iniciar Sesion</button>
                     </form>
                 </div>
@@ -83,15 +118,15 @@ function Login(){
                                     <h5>Bienvenido!</h5>
                                     <p>Por favor diligencie el formato y presione en el boton <span className='fst-italic'>Crear cuenta</span> una vez este completo.</p>
                                     <p className='data-wont-share'>* Sus datos no seran compartidos.</p>
-                                    <form className='form mb-3' action='/login' method='post'>
+                                    <form className='form mb-3' action={testurl} method='post' onSubmit={addUser}>
                                         <label htmlFor='name' className='reg-form-label fs-6 reg-form-input'>Nombre</label>
-                                        <input name='name' className='form-control mb-3' type='text'></input>
+                                        <input name='name' className='form-control mb-3' type='text' onChange={handleChangeNewUser}></input>
                                         <label htmlFor='ph-number' className='reg-form-label fs-6 reg-form-input'>Telefono</label>
-                                        <input name='ph-number' className='form-control mb-3'></input>
+                                        <input name='ph-number' className='form-control mb-3' onChange={handleChangeNewUser}></input>
                                         <label htmlFor='email' className='reg-form-label fs-6 reg-form-input'>Correo electronico</label>
-                                        <input name='email' className='form-control mb-3' required='true'></input>
+                                        <input name='email' className='form-control mb-3' required='true' onChange={handleChangeNewUser}></input>
                                         <label htmlFor='password' className='reg-form-label fs-6 reg-form-input'>Contrasena</label>
-                                        <input name='password' className='form-control mb-3' type='password'></input>
+                                        <input name='password' className='form-control mb-3' type='password' onChange={handleChangeNewUser}></input>
                                         <button type="submit" class="btn btn-primary">Crear cuenta</button>
                                     </form>
                                 </div>
