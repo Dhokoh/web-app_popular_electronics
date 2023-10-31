@@ -78,6 +78,7 @@ function Login(){
             <div className='row justify-content-center mb-3'>
                 <div className='col login-left-panel'>
                     <form action={testurl} method='post' onSubmit={loginUser}>
+                        <input type='hidden' name='formID' value='loginform'></input>
                         <label className='form-label mb-3 login-form-label' htmlFor='email'>Correo electronico: </label>
                         <input className='form-control mb-3 login-form-input' name='email' value={loginData.email} onChange={handleChangeLogin} type='text' required='true'/>
                         <label className='form-label mb-3 login-form-label' htmlFor='password'>Contrasena: </label>
@@ -119,6 +120,7 @@ function Login(){
                                     <p>Por favor diligencie el formato y presione en el boton <span className='fst-italic'>Crear cuenta</span> una vez este completo.</p>
                                     <p className='data-wont-share'>* Sus datos no seran compartidos.</p>
                                     <form className='form mb-3' action={testurl} method='post' onSubmit={addUser}>
+                                        <input type='hidden' name='formID' value='regform'></input>
                                         <label htmlFor='name' className='reg-form-label fs-6 reg-form-input'>Nombre</label>
                                         <input name='name' className='form-control mb-3' type='text' onChange={handleChangeNewUser}></input>
                                         <label htmlFor='ph-number' className='reg-form-label fs-6 reg-form-input'>Telefono</label>
