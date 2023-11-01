@@ -10,11 +10,13 @@ const testurl = 'http://localhost:3000/login' //testing
 function Login(){
 
     const [loginData, setLoginData] = useState({
+        formID: "",
         email: "",
         password: "",
     });
 
     const [newUserData, setnewUserData] = useState({
+        formID: "",
         name: "",
         email: "",
         password: "",
@@ -44,16 +46,9 @@ function Login(){
                     'Content-type': 'application/json'
                 },
                 body: JSON.stringify(newUserData)
-            });
-
-            if (response.ok){
-                //User created successfully.
-                console.warn('usuario creado');
-            }else{
-                console.error('Hubo un problema');
-            }
+            }).then(response.json());
         }catch(e){
-            
+            console.error(e);
         }
     }
 
@@ -64,7 +59,7 @@ function Login(){
                 'Content-type': 'application/json',
             },
             body: JSON.stringify()
-        })
+        }).then(console.log("user logged in"))
         if (all_users.body.email == loginData.email){
             return <>
                 <Profile/>
